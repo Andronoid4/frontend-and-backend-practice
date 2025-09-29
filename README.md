@@ -1,2 +1,2 @@
 # Сcылка на Git Pages:
-https://github.com/Andronoid4/frontend-and-backend-practice
+https://andronoid4.github.io/frontend-and-backend-practice/index.html
