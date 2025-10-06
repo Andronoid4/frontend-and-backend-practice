@@ -1,63 +1,69 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="../style/styles.css">
-<html lang = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Новости</title>
-        <style>
-            .small-text {
-        font-size: 12px;
-        font-weight: bold;}
-        </style>
-        <style>
-            .big-text {
-        font-size: 20px;
-        font-weight: bolder;}
-        </style>
-        <style>
-            .giant-text {
-        font-size: 40px;
-        font-weight: bolder;}
-        </style>
-    </head>
-    <body>
-         <div class="page-container">
-            <div class="header">Хэдер</div>
-                <div class="nav">
-              <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-        <div id="content">
-            <div class="experience-section">
-                <h2 class="section-title">Новости</h2>
-                <div class="experience-card">
-                    <h3 class="big-text">Новость 1:</h3>
-                    <p class="small-text">32.13.0001 Драник</p>
-                    <p>Бла-бла-бла.</p>
-                </div>
-            </div>
-                        
-            <div class="experience-section">
-                <div class="experience-card">
-                    <h3 class="big-text">Новость 2:</h3>
-                    <p class="small-text">33.14.0002 Жраник</p>
-                    <p>Бле-бле-бле.</p>
-                </div>
-            </div>
-            
-            <div class="experience-section">
-                <div class="experience-card">
-                    <h3 class="big-text">Новость 3:</h3>
-                    <p class="small-text">34.15.0003 Лраник</p>
-                    <p>Бле-бле-бле.</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer">Футер</div>    
-    </body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        .small-text {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .big-text {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .giant-text {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Хэдер</h1>
+        </header>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <article class="profile-header">
+                <h1 class="profile-title">Новости</h1>
+            </article>
+
+            <section class="news-container">
+                <article class="news-card">
+                    <h3 class="news-title big-text">Новость 1:</h3>
+                    <p class="news-meta small-text">32.13.0001 Драник</p>
+                    <p class="news-text">Бла-бла-бла.</p>
+                </article>
+
+                <article class="news-card">
+                    <h3 class="news-title big-text">Новость 2:</h3>
+                    <p class="news-meta small-text">33.14.0002 Жраник</p>
+                    <p class="news-text">Бле-бле-бле.</p>
+                </article>
+
+                <article class="news-card">
+                    <h3 class="news-title big-text">Новость 3:</h3>
+                    <p class="news-meta small-text">34.15.0003 Лраник</p>
+                    <p class="news-text">Бле-бле-бле.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Футер</p>
+        </footer>
+    </div>
+</body>
 </html>
