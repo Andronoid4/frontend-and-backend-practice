@@ -1,60 +1,71 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="../style/styles.css">
-<html lang = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары</title>
-        <style>
-            .small-text {
-        font-size: 12px;
-        font-weight: bold;}
-        </style>
-        <style>
-            .big-text {
-        font-size: 20px;
-        font-weight: bolder;}
-        </style>
-        <style>
-            .giant-text {
-        font-size: 40px;
-        font-weight: bolder;}
-        </style>
-    </head>
-    <body>
-        <div class="page-container">
-            <div class="header">Хэдер</div>
-                <div class="nav">
-              <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-                <div id="content">
-                    
-                    <div class="profile-header">
-                        <h1 class="profile-title">Товары</h1>
-                    <img class="profile-photo" src="/images/phone.jpg" alt="Фото товара" width="250" height="250">
-                    <p class="big-text">Телефон Хеллоу Китти</p>
-                    <div class="skills-container">
-                    <div class="skill-tag">50 000$</div>
-                    </div>
-                    <img class="profile-photo" src="/images/h.jpg" alt="Фото товара" width="250" height="250">
-                    <p class="big-text">Рюкзак Хайзеберг</p>
-                    <div class="skills-container">
-                    <div class="skill-tag">150 000$</div>
-                    </div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        .small-text {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .big-text {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .giant-text {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Хэдер</h1>
+        </header>
 
-                    <img class="profile-photo" src="/images/4.jpg" alt="Фото товара" width="250" height="250">
-                    <p class="big-text">4</p>
-                    <div class="skills-container">
-                    <div class="skill-tag">4 444 444$</div>
-                    </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <article class="profile-header">
+                <h1 class="profile-title">Товары</h1>
+            </article>
+
+            <section class="products-container">
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img class="product-image" src="/images/phone.jpg" alt="Телефон Хеллоу Китти">
+                        <h3 class="product-name big-text">Телефон Хеллоу Китти</h3>
+                        <div class="product-price">50 000$</div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-image" src="/images/h.jpg" alt="Рюкзак Хайзеберг">
+                        <h3 class="product-name big-text">Рюкзак Хайзеберг</h3>
+                        <div class="product-price">150 000$</div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-image" src="/images/4.jpg" alt="Товар 4">
+                        <h3 class="product-name big-text">4</h3>
+                        <div class="product-price">4 444 444$</div>
+                    </article>
                 </div>
-            </div>
-            <div class="footer">Футер</div>    
-        </div>
-    </body>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Футер</p>
+        </footer>
+    </div>
+</body>
 </html>
