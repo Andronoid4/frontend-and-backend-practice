@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="../style/styles.css">
-<html lamg = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Товары</title>
-        <style>
-            .small-text {
-        font-size: 12px;
-        font-weight: bold;}
-        </style>
-        <style>
-            .big-text {
-        font-size: 20px;
-        font-weight: bolder;}
-        </style>
-        <style>
-            .giant-text {
-        font-size: 40px;
-        font-weight: bolder;}
-        </style>
-    </head>
-    <body>
-        <div id="header">Хэдер</div>
-        <div id="menu">
-            <ul>
-                <li><a href="/index.html">Главная</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="practices.html">Практики</a></li> 
-                <li><a href="goods.html">Товары</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </div>
-        <div id="content">
-            <p class="giant-text">Товары</p>
-            
-            <img src="/images/phone.jpg" alt="Фото товара" width="250" height="250">
-            <p class="big-text">Телефон Хеллоу Китти:</p>
-            <p>50 000$</p>
-            
-            <img src="/images/h.jpg" alt="Фото товара" width="250" height="250">
-            <p class="big-text">Рюкзак Хайзеберг</p>
-            <p>150 000$.</p>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        .small-text {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .big-text {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .giant-text {
+            font-size: 40px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <h1>Фронтенд и бэкенд разработка</h1>
+        </header>
 
-            <img src="/images/4.jpg" alt="Фото товара" width="250" height="250">
-            <p class="big-text">4</p>
-            <p>4 444 444$.</p>
-        </div>
-        <div id="footer">Футер</div>    
-    </body>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <article class="profile-header">
+                <h1 class="profile-title">Товары</h1>
+            </article>
+
+            <section class="products-container">
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img class="product-image" src="/images/phone.jpg" alt="Телефон Хеллоу Китти">
+                        <h3 class="product-name big-text">Телефон Хеллоу Китти</h3>
+                        <div class="product-price">50 000$</div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-image" src="/images/h.jpg" alt="Рюкзак Хайзеберг">
+                        <h3 class="product-name big-text">Рюкзак Хайзеберг</h3>
+                        <div class="product-price">150 000$</div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="product-image" src="/images/4.jpg" alt="Товар 4">
+                        <h3 class="product-name big-text">4</h3>
+                        <div class="product-price">4 444 444$</div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 Все права защищены. Контактная информация</p>
+        </footer>
+    </div>
+</body>
 </html>
